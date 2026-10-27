@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — CORE-BLOCK PROPERTIES LTD</title>
+<style>
+:root{--green:#17382d;--green2:#245744;--gold:#d8b36a;--cream:#f7f5ef;--ink:#18231f;--muted:#69756f;--white:#fff;--line:#e5e4dc}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.topbar{background:var(--green);color:#f8f4e9;text-align:center;padding:8px 16px;font-size:12px;letter-spacing:.08em}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px max(5vw,20px);background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 16px #12251b0a}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.07em}.brandmark{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-family:Georgia,serif;font-size:18px}.brand small{display:block;font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.19em;margin-top:2px}.navlinks{display:flex;gap:26px;align-items:center;font-size:13px;font-weight:700}.navlinks a:hover,.navlinks a.active{color:var(--green2)}.navcta,.btn{display:inline-flex;justify-content:center;align-items:center;border:0;background:var(--gold);color:#18231f;padding:13px 20px;font-weight:800;font-size:13px;cursor:pointer;border-radius:4px;transition:.2s}.menu{display:none;background:none;border:1px solid var(--line);padding:9px 12px;border-radius:5px}section{padding:50px max(5vw,20px)}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}h1{font:500 42px Georgia,serif;margin:10px 0 30px}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px}.contact-card{background:#fff;padding:26px;border-radius:8px;border:1px solid var(--line)}.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-form .full{grid-column:1/-1}.field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;color:var(--muted);margin-bottom:7px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fff;padding:13px 12px;border-radius:4px}.contact-form textarea{min-height:110px;resize:vertical}.contact-form .btn{width:100%}.contact-details{margin-top:25px;display:grid;gap:18px;font-size:14px}.contact-details strong{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}.toast{display:none;background:#e6f2e8;color:#163b28;padding:12px;border-radius:4px;font-size:13px;margin-top:12px}.toast.show{display:block}footer{background:#10231d;color:#dce4dd;padding:35px max(5vw,20px);display:flex;justify-content:space-between;align-items:center;font-size:12px}footer .brand{color:#fff}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:78px;left:0;right:0;padding:20px;background:#fff;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.menu{display:block}.contact-grid{grid-template-columns:1fr;gap:30px}}
+</style>
+</head>
+<body>
+<div class="topbar">REAL ESTATE • PROPERTY SALES • RENTALS • LAND & INVESTMENT</div>
+<header class="nav">
+  <a class="brand" href="index.html"><span class="brandmark">CB</span><span>CORE-BLOCK PROPERTIES LTD<small>PROPERTY & REAL ESTATE</small></span></a>
+  <button class="menu" id="menuBtn">☰</button>
+  <nav class="navlinks" id="navlinks">
+    <a href="index.html">Home</a>
+    <a href="properties.html">Properties</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact Us</a>
+    <a class="navcta" href="contact.html">Find a Property ↗</a>
+  </nav>
+</header>
+<main>
+<section>
+  <div class="eyebrow">Let's talk property</div>
+  <h1>Contact CORE-BLOCK PROPERTIES LTD</h1>
+  <div class="contact-grid">
+    <div>
+      <p>Share a few details about what you need and submit your enquiry below.</p>
+      <div class="contact-details">
+        <div><strong>Company</strong>CORE-BLOCK PROPERTIES LTD</div>
+        <div><strong>Service area</strong>Nigeria · Lagos, Abuja, Ondo, and surrounding states</div>
+        <div><strong>Phone / WhatsApp</strong><a href="tel:+2349012754373">+234 9012754373</a></div>
+        <div><strong>Email</strong><a href="mailto:coreblockpropertiesltd@gmail.com">coreblockpropertiesltd@gmail.com</a></div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <form class="contact-form" id="contactForm">
+        <div class="field"><label for="name">Your name</label><input id="name" required placeholder="Full name"></div>
+        <div class="field"><label for="phone">Phone number</label><input id="phone" required type="tel" placeholder="+234…"></div>
+        <div class="field"><label for="interest">I'm interested in</label>
+          <select id="interest">
+            <option>Buying a property</option>
+            <option>Renting a property</option>
+            <option>Buying land</option>
+            <option>Selling a property</option>
+            <option>Property investment</option>
+            <option>Other enquiry</option>
+          </select>
+        </div>
+        <div class="field"><label for="budget">Budget (optional)</label><input id="budget" placeholder="e.g. ₦25,000,000"></div>
+        <div class="field full"><label for="message">Tell us more</label><textarea id="message" placeholder="Preferred location, property type, timing…"></textarea></div>
+        <div class="full">
+          <button class="btn" type="submit">Prepare Enquiry ↗</button>
+          <div class="toast" id="toast" role="status"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <a class="brand" href="index.html"><span class="brandmark">CB</span><span>CORE-BLOCK PROPERTIES LTD<small>PROPERTY & REAL ESTATE</small></span></a>
+  <span>© <span id="year"></span> CORE-BLOCK PROPERTIES LTD. All rights reserved.</span>
+  <a href="contact.html">Back to top ↑</a>
+</footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('contactForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const data={
+    name:document.getElementById('name').value.trim(),
+    phone:document.getElementById('phone').value.trim(),
+    interest:document.getElementById('interest').value,
+    budget:document.getElementById('budget').value.trim(),
+    message:document.getElementById('message').value.trim()
+  };
+  const mail='coreblockpropertiesltd@gmail.com';
+  const body=`Hello CORE-BLOCK PROPERTIES LTD,%0A%0AMy name is ${encodeURIComponent(data.name)}.%0APhone: ${encodeURIComponent(data.phone)}%0AInterest: ${encodeURIComponent(data.interest)}%0ABudget: ${encodeURIComponent(data.budget||'Not specified')}%0ADetails: ${encodeURIComponent(data.message||'Not specified')}`;
+  
+  const toast=document.getElementById('toast');
+  toast.classList.add('show');
+  toast.innerHTML='Opening your email application to send the enquiry...';
+  
+  window.location.href=`mailto:${mail}?subject=${encodeURIComponent('Property Enquiry - CORE-BLOCK PROPERTIES LTD')}&body=${body}`;
+});
+</script>
+</body>
+</html>

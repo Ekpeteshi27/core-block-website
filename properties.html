@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Properties — CORE-BLOCK PROPERTIES LTD</title>
+<style>
+:root{--green:#17382d;--green2:#245744;--gold:#d8b36a;--cream:#f7f5ef;--ink:#18231f;--muted:#69756f;--white:#fff;--line:#e5e4dc}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.topbar{background:var(--green);color:#f8f4e9;text-align:center;padding:8px 16px;font-size:12px;letter-spacing:.08em}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px max(5vw,20px);background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 16px #12251b0a}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.07em}.brandmark{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-family:Georgia,serif;font-size:18px}.brand small{display:block;font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.19em;margin-top:2px}.navlinks{display:flex;gap:26px;align-items:center;font-size:13px;font-weight:700}.navlinks a:hover,.navlinks a.active{color:var(--green2)}.navcta,.btn{display:inline-flex;justify-content:center;align-items:center;border:0;background:var(--gold);color:#18231f;padding:13px 20px;font-weight:800;font-size:13px;cursor:pointer;border-radius:4px;transition:.2s}.menu{display:none;background:none;border:1px solid var(--line);padding:9px 12px;border-radius:5px}section{padding:50px max(5vw,20px)}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}h1{font:500 42px Georgia,serif;margin:10px 0 30px}.searchwrap{background:#fff;box-shadow:0 18px 50px #172b2114;padding:22px;border-radius:8px;margin-bottom:40px}.searchform{display:grid;grid-template-columns:1.3fr 1fr 1fr auto;gap:14px;align-items:end}.field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;color:var(--muted);margin-bottom:7px}.field input,.field select{width:100%;border:1px solid var(--line);padding:13px 12px;border-radius:4px}.listing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.property{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}.property-img{height:230px;position:relative;background:#d9ded9 center/cover}.tag{position:absolute;top:15px;left:15px;background:var(--gold);color:#17231e;padding:6px 10px;font-size:10px;font-weight:900;text-transform:uppercase}.property-body{padding:20px}.property-body h3{font:500 23px Georgia,serif;margin:0 0 6px}.location{font-size:12px;color:var(--muted)}.price{font-size:18px;font-weight:800;color:var(--green);margin:17px 0 13px}.specs{display:flex;gap:14px;border-top:1px solid var(--line);padding-top:13px;color:var(--muted);font-size:12px}.note{font-size:12px;color:var(--muted);margin-top:20px}footer{background:#10231d;color:#dce4dd;padding:35px max(5vw,20px);display:flex;justify-content:space-between;align-items:center;font-size:12px}footer .brand{color:#fff}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:78px;left:0;right:0;padding:20px;background:#fff;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.menu{display:block}.searchform{grid-template-columns:1fr 1fr}.searchform .btn{grid-column:1/-1}.listing-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.searchform{grid-template-columns:1fr}.listing-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar">REAL ESTATE • PROPERTY SALES • RENTALS • LAND & INVESTMENT</div>
+<header class="nav">
+  <a class="brand" href="index.html"><span class="brandmark">CB</span><span>CORE-BLOCK PROPERTIES LTD<small>PROPERTY & REAL ESTATE</small></span></a>
+  <button class="menu" id="menuBtn">☰</button>
+  <nav class="navlinks" id="navlinks">
+    <a href="index.html">Home</a>
+    <a href="properties.html" class="active">Properties</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+    <a class="navcta" href="contact.html">Find a Property ↗</a>
+  </nav>
+</header>
+<main>
+<section>
+  <div class="eyebrow">Explore opportunities</div>
+  <h1>Featured Properties</h1>
+  <div class="searchwrap">
+    <form class="searchform" id="searchForm">
+      <div class="field"><label for="keyword">What are you looking for?</label><input id="keyword" placeholder="House, land, apartment…"></div>
+      <div class="field"><label for="purpose">Purpose</label><select id="purpose"><option value="all">Buy or rent</option><option value="sale">For sale</option><option value="rent">For rent</option><option value="land">Land</option></select></div>
+      <div class="field"><label for="area">Preferred location</label><input id="area" placeholder="e.g. Lagos, Ondo"></div>
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="listing-grid">
+    <article class="property" data-kind="sale" data-location="lagos" data-keywords="modern family home house sale">
+      <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80')"><span class="tag">For sale</span></div>
+      <div class="property-body"><h3>Modern Family Home</h3><div class="location">Lagos, Nigeria</div><div class="price">Price on request</div><div class="specs"><span>⌂ Residential</span><span>✓ Viewing by appointment</span></div></div>
+    </article>
+    <article class="property" data-kind="rent" data-location="abuja" data-keywords="apartment rental flat city">
+      <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80')"><span class="tag">For rent</span></div>
+      <div class="property-body"><h3>Contemporary Apartment</h3><div class="location">Abuja, Nigeria</div><div class="price">Rent on request</div><div class="specs"><span>⌂ Apartment</span><span>✓ Viewing by appointment</span></div></div>
+    </article>
+    <article class="property" data-kind="land" data-location="ondo" data-keywords="land plot investment property">
+      <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80')"><span class="tag">Land</span></div>
+      <div class="property-body"><h3>Land & Investment Options</h3><div class="location">Ondo State, Nigeria</div><div class="price">Price on request</div><div class="specs"><span>⌂ Land</span><span>✓ Enquire for details</span></div></div>
+    </article>
+  </div>
+  <p class="note" id="searchNote">Showing available listing options. Select or search to narrow down choices.</p>
+</section>
+</main>
+<footer>
+  <a class="brand" href="index.html"><span class="brandmark">CB</span><span>CORE-BLOCK PROPERTIES LTD<small>PROPERTY & REAL ESTATE</small></span></a>
+  <span>© <span id="year"></span> CORE-BLOCK PROPERTIES LTD. All rights reserved.</span>
+  <a href="properties.html">Back to top ↑</a>
+</footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
